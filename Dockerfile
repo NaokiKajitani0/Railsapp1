@@ -3,6 +3,7 @@ RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 WORKDIR /Railsapp1
 COPY Gemfile /Railsapp1/Gemfile
 COPY Gemfile.lock /Railsapp1/Gemfile.lock
+RUN apt-get install imagemagick
 RUN bundle install
 
 # コンテナー起動時に毎回実行されるスクリプトを追加
