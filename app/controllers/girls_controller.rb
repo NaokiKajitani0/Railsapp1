@@ -65,6 +65,6 @@ class GirlsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def girl_params
-      params.require(:girl).permit(:name, :content)
+      params.require(:girl).permit(:name, :content, :image)
     end
 end
