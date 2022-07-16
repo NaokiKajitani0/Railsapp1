@@ -9,6 +9,10 @@
   <strong>Content:</strong>
   <%= @girl.content %>
 </p>
+<p>
+  <strong>image:</strong>
+  <%= image_tag(@girl.image.to_s) %>
+</p>
 
 <%= link_to 'Edit', edit_girl_path(@girl) %> |
 <%= link_to 'Back', girls_path %>
